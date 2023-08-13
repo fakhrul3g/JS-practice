@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /*var age=19;
+        var city="Dhaka"
+        if (age>18 && city == "Dhaka"){
+            document.write("You are an adult");
+        }
+        else{
+            document.write("You are a child")
+        } */ 
+/*
+        var a=101;
+        if(a>=80 && a<=100){
+            document.write("A+");
+        }
+        else if (a>=71 && a<80) {
+            document.write("A-");
+        }
+        else if (a>=61 && a<71){
+            document.write("B+");
+        }
+        else {
+            document.write("F");
+        } */
+        
+        
+        /*var a =35;
+        switch(true){
+            case(a>=80 && a <=100)
+        }*/
+
+        /*var i;
+        for (i=1; i<10; i=i+1){
+
+            if(i==5 || i==8) {
+               continue;
+            }
+            document.write(i+"<button>submit</button> <br>");            
+        }*/
+
+        /*var i=0;
+        while(i<3){
+            document.write(i+"<button>submit</button> <br>");
+            i=i+1;
+        }*/
+
+        /*var i=0;
+        do{
+            document.write(i+"<button>submit</button> <br>");
+            i=i+1
+        }
+        while(i<4); */ 
+        /*
+               
+        function addTwoNumber (){
+            var num1=5;
+            var num2=6;
+            var num3=num1+num2;
+            document.write(num3, "<br>");
+        }*/
+// for In loop over object
+       /* var Person={
+            Name: "Fakhrul",
+            age:50,
+            city:"Ctg",
+            height:"5 feet 5 inch"
+        }
+
+        for(var item in Person){
+            document.write(Person[item]+ "<br>");
+        }*/
+// for In loop over Array
+
+        /*var conductor=['Alluminium', 'Copper', 'Steel', 'Alloy Steel' ];
+        for(var item in conductor){
+            document.write(conductor[item] + "<br>");
+
+        }*/
+        //Array concat combines two or more arrays
+       /* var arr1 =['A', 'B', 'C'];
+        var arr2 =['D', 'E', 'F'];
+
+        var arr3= arr1.concat(arr2);
+        for (var ite in arr3){
+        document.write(arr3[ite] +"<br>");
+        }*/
+
+        //Array form method
+        /*var numArray=[10,20,30,40,50,60,70,80,90];
+       var result=  numArray.filter(function(it){
+            return it>50;
+        });
+
+        document.write(result);*/
+        // Get the purchase amount from the user
+const inputAmount = prompt("Enter the total purchase amount:");
+const totalAmount = parseFloat(inputAmount);
+
+// Define the calculateDiscount function
+function calculateDiscount(totalAmount) {
+  let discount;
+
+  if (totalAmount < 50) {
+    discount = 0;
+  } else if (totalAmount <= 100) {
+    discount = 0.05 * totalAmount;
+  } else if (totalAmount <= 200) {
+    discount = 0.1 * totalAmount;
+  } else {
+    discount = 0.15 * totalAmount;
+  }
+
+  const discountedAmount = totalAmount - discount;
+  return [discountedAmount, discount];
+}
+
+// Call the calculateDiscount function with the totalAmount as input
+const [discountedAmount, discount] = calculateDiscount(totalAmount);
+
+// Display the results
+document.write("Total Amount:", totalAmount);
+document.write("<br>");
+document.write("Discount Amount:", discount);
+document.write("<br>");
+document.write("Discounted Amount:", discountedAmount);
+
+</script>
+
+
+</body>
+</html>
